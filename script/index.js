@@ -22,3 +22,12 @@ function toggleImages(dataImage){
     }
 }
 // End of toggleImages
+
+function toggleActiveClass(active){
+    
+ buttons.forEach(function(button){ // cycle over buttons
+     button.classList.remove('active'); // remove active class from it
+ });
+ active.classList.add('active'); // add active class to the button that is clicked
+}
+//End of toggleActiveClass
