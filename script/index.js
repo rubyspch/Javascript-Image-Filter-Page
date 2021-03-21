@@ -31,3 +31,12 @@ function toggleActiveClass(active){
  active.classList.add('active'); // add active class to the button that is clicked
 }
 //End of toggleActiveClass
+
+
+buttons.forEach(function(button){ //for every button...
+ button.addEventListener('click', function(){ // when you click...
+     toggleImages(button.dataset.class); // run the code. Could put dataImage instead.
+
+     toggleActiveClass(button); // give ALL the info about the clicked button to the toggleActiveClass function
+ });
+});
