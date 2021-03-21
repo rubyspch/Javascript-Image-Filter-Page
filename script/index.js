@@ -32,6 +32,21 @@ function toggleActiveClass(active){
 }
 //End of toggleActiveClass
 
+filterButton.addEventListener('click', function(){ // when filter is clicked
+ let inputValue=filterSearch.value; // make inputValue = what is typed into search bar
+ let searchTerm=inputValue.toLowerCase(); // convert what was typed to lowercase to match our html datasets
+     toggleImages(searchTerm); // shows the pictures that match what was typed into the search bar
+
+         buttons.forEach(function(button){ //for each looks over buttons and runs the function for each one
+             let dataClass= button.getAttribute('data-class'); // grab the data-class from the button
+             if(dataClass === searchTerm){ // if the grabbed dataclass matches the typed search bar...
+                 button.classList.add('active'); //...add active style to it
+             } else {
+                 button.classList.remove('active');//... if not remove active style from it
+             }
+             filterSearch.value=""; // clears the search bar after displaying correct images
+         });
+});
 
 buttons.forEach(function(button){ //for every button...
  button.addEventListener('click', function(){ // when you click...
