@@ -1,6 +1,6 @@
 const buttons= document.querySelectorAll('button.selection');
 
-const allImages= document.querySelectorAll('main .image-selections .images');
+const allImages= document.querySelectorAll('main #image-selections .images');
 
 let filterSearch=document.querySelector('input[name="filter"]');
 
