@@ -3,6 +3,7 @@ body{
  padding: 20px;
  color:#fffffd;
 }
+
 header{
  display: flex;
  flex-direction:column;
@@ -32,22 +33,24 @@ button{
 }
 
 main{
- width:90%;
- margin:2em auto;
+    width:90%;
+    margin:2em auto;
 }
+
 div#image-selections{
- display:flex;
- flex-wrap:wrap;
- flex:1;
- justify-content: space-between;
- align-items:center;
+    display:flex;
+    flex-wrap:wrap;
+    flex:1;
+    justify-content: space-between;
+    align-items:center;
 }
+
 div.images{
- width: 400px;
- margin-top:40px;
+    width: 400px;
+    margin-top:40px;
 }  
 
 img{
- width:100%;
- box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    width:100%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
